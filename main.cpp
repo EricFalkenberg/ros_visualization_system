@@ -2,8 +2,6 @@
 #include <boost/thread.hpp>
 #include "visualize_evidence.h"
 
-ARG_STRUCT GFX_ARGS;
-
 /**
     main
 */

@@ -7,6 +7,7 @@
 #define PI 3.14159265
 
 // GLOBAL VARIABLES
+ARG_STRUCT GFX_ARGS;
 bool has_refreshed = false;
 std::vector< std::vector<float> > vec;
 float granularity;
@@ -16,6 +17,7 @@ std::vector<float> robot_info(3, 0.0);
 void updateEvidenceGrid() {
     shared_grid.retrieve_grid(&vec, &robot_info);
 }
+
 
 void dispatch_gfx() {
     int    argc          = GFX_ARGS.argc;
