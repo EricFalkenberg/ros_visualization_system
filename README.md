@@ -54,6 +54,17 @@ Using the visualization system is as simple as including visualize_evidence.h,
 initializing GFX_ARGS, and running dispatch_gfx in a thread via your preferred means
 of thread creation.
 
+The following is an example of updating the GUIs evidence grid. The vector representation of 
+the environment is passed as the first argument and the robot information vector of the form `[theta, x, y]`
+is passed as the second.
+```c++
+std::vector<float> robot_info(3);
+robot_info[0] = position_theta;
+robot_info[1] = x_pos;
+robot_info[2] = y_pos;
+this->grid->update_grid(this->vec, robot_info);
+```
+
 ## Contributing
 
 If you would like to contribute follow these steps and i'll review the
