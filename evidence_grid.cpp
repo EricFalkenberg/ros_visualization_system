@@ -18,7 +18,7 @@ EvidenceGrid::EvidenceGrid(const int g) {
     this->robot_info = new float[3];
     this->robot_info[0] = 0.0;
     this->robot_info[1] = 0.0;
-    this->robot_info[1] = 0.0;
+    this->robot_info[2] = 0.0;
 }
 
 void EvidenceGrid::update_grid(std::vector< std::vector<float> > external_grid, std::vector<float> robot_info) {
